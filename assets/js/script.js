@@ -4,6 +4,57 @@ const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 
+const questions = [
+  {
+    question: 'Arrays in JavaScript can be used to strore?',
+    answers: [
+      { text: 'numbers and strings', correct: true },
+      { text: 'other arrays', correct: false },
+      { text: 'booleans', correct: false },
+      { text: 'IDK', correct: false }
+    ]
+  },
+  {
+    question: 'A condition in an if/else statement is enclosed in _____',
+    answers: [
+      { text: 'quotes', correct: false },
+      { text: 'parenthesis', correct: true },
+      { text: 'curly bracket', correct: false },
+      { text: 'square bracket', correct: false }
+    ]
+  },
+  {
+    question: 'Commonly used data types DO Not include: ',
+    answers: [
+      { text: 'strings', correct: false },
+      { text: 'booleans', correct: false },
+      { text: 'alerts', correct: true },
+      { text: 'numbers', correct: false }
+    ]
+  },
+  {
+    question: 'String values must be enclosed in ____ when being assigned to variables',
+    answers: [
+      { text: 'commas', correct: false },
+      { text: 'curly brackets', correct: false },
+      { text: 'quotes', correct: true },
+      { text: 'parenthesis', correct: false }
+    ]
+  },
+  {
+    question: 'A very useful tool during development and debugging for printing content in the debugger is',
+    answers: [
+      { text: 'Javascript', correct: false },
+      { text: 'terminal/bash', correct: false },
+      { text: 'for loops', correct: false },
+      { text: 'console log', correct: true }
+    ]
+  },
+]
+
+
+
+
 /*
 let currentQuestion = {}
 let acceptingAnswers = true
@@ -194,53 +245,4 @@ function clearStatusClass(element) {
   element.classList.remove('correct')
   element.classList.remove('wrong')
 }
-
-const questions = [
-  {
-    question: 'Arrays in JavaScript can be used to strore?',
-    answers: [
-      { text: 'numbers and strings', correct: true },
-      { text: 'other arrays', correct: false },
-      { text: 'booleans', correct: false },
-      { text: 'IDK', correct: false }
-    ]
-  },
-  {
-    question: 'A condition in an if/else statement is enclosed in _____',
-    answers: [
-      { text: 'quotes', correct: false },
-      { text: 'parenthesis', correct: true },
-      { text: 'curly bracket', correct: false },
-      { text: 'square bracket', correct: false }
-    ]
-  },
-  {
-    question: 'Commonly used data types DO Not include: ',
-    answers: [
-      { text: 'strings', correct: false },
-      { text: 'booleans', correct: false },
-      { text: 'alerts', correct: true },
-      { text: 'numbers', correct: false }
-    ]
-  },
-  {
-    question: 'String values must be enclosed in ____ when being assigned to variables',
-    answers: [
-      { text: 'commas', correct: false },
-      { text: 'curly brackets', correct: false },
-      { text: 'quotes', correct: true },
-      { text: 'parenthesis', correct: false }
-    ]
-  },
-  {
-    question: 'A very useful tool during development and debugging for printing content in the debugger is',
-    answers: [
-      { text: 'Javascript', correct: false },
-      { text: 'terminal/bash', correct: false },
-      { text: 'for loops', correct: false },
-      { text: 'console log', correct: true }
-    ]
-  },
-]
-
 
