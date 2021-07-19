@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       timeLeftDisplay.innerHTML = timeLeft
       timeLeft -= 1
-    },75000)
+    },750)
   }
 
   startButton.addEventListener('click', countDown)
